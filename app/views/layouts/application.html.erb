@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title>FirstApp</title>
     <%= csrf_meta_tags %>
@@ -10,6 +10,13 @@
   </head>
 
   <body>
+
+    <ul class="navbar">
+      <li> <%= link_to 'one' , pages_one_path %></li>
+      <li> <%= link_to 'two' , pages_two_path %></li>
+      <li> <%= link_to 'three' , pages_three_path %></li>
+
+    </ul>
     <%= yield %>
   </body>
 </html>
